@@ -1,5 +1,5 @@
 %define version	3.03
-%define release	%mkrel 5
+%define release	%mkrel 6
 %define realname	Net-Telnet
 %define name	perl-%realname
 
