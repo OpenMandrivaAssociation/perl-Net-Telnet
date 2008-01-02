@@ -11,6 +11,7 @@ License:	GPL
 Group:		Development/Perl
 Source:		%{realname}-%{version}.tar.bz2
 URL:		http://search.cpan.org/dist/%realname
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root/
 BuildArch:	noarch
 BuildRequires:	perl-devel
 
