@@ -1,19 +1,18 @@
-%define version	3.03
-%define release	%mkrel 8
-%define realname	Net-Telnet
-%define name	perl-%realname
+%define upstream_name	 Net-Telnet
+%define upstream_version 3.03
+
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
 
 Summary:	Net::Telnet perl module
-Name:		%{name}
-version:	%{version}
-Release:	%{release}
 License:	GPL
 Group:		Development/Perl
-Source:		%{realname}-%{version}.tar.bz2
-URL:		http://search.cpan.org/dist/%realname
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root/
+Url:		http://search.cpan.org/dist/%upstream_name
+Source0:	%{upstream_name}-%{upstream_version}.tar.bz2
+
 BuildArch:	noarch
-BuildRequires:	perl-devel
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Net::Telnet allows you to make client connections to a TCP port and do network
@@ -25,7 +24,7 @@ features include the ability to specify a timeout and to wait for patterns to
 appear in the input stream, such as the prompt from a shell.
 
 %prep
-%setup -q -n %{realname}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -46,4 +45,3 @@ rm -rf $RPM_BUILD_ROOT
 %doc README ChangeLog
 %{_mandir}/*/*
 %{perl_vendorlib}/Net
-
