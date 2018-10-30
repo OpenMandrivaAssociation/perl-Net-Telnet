@@ -4,7 +4,7 @@
 Summary:	Net::Telnet perl module
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	1
+Release:	2
 License:	GPLv2
 Group:		Development/Perl
 Url:		http://metacpan.org/pod/Net::Telnet
