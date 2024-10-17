@@ -7,7 +7,7 @@ Version:	%perl_convert_version %{modver}
 Release:	3
 License:	GPLv2
 Group:		Development/Perl
-Url:		http://metacpan.org/pod/Net::Telnet
+Url:		https://metacpan.org/pod/Net::Telnet
 Source0:	https://cpan.metacpan.org/authors/id/J/JR/JROGERS/Net-Telnet-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
