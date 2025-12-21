@@ -10,6 +10,7 @@ Group:		Development/Perl
 Url:		https://metacpan.org/pod/Net::Telnet
 Source0:	https://cpan.metacpan.org/authors/id/J/JR/JROGERS/Net-Telnet-%{modver}.tar.gz
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	perl-devel
 
 %description
