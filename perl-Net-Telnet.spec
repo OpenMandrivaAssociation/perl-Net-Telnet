@@ -1,13 +1,13 @@
 %define modname	Net-Telnet
-%define modver	3.04
+%define modver	3.05
 
 Summary:	Net::Telnet perl module
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	3
+Version:	%{modver}
+Release:	1
 License:	GPLv2
 Group:		Development/Perl
-Url:		https://metacpan.org/pod/Net::Telnet
+Url:		https://metacpan.org/dist/Net-Telnet
 Source0:	https://cpan.metacpan.org/authors/id/J/JR/JROGERS/Net-Telnet-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
